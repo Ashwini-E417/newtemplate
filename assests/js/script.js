@@ -105,7 +105,7 @@ function updateBannerCorousel() {
                 if (clampText[index].style.display=="block") {
                     clampText[index].style.display = "-webkit-box";
                     clampText[index].style.webkitLineClamp = "4";
-                    element.innerHTML = "Read More ▶";
+                    element.innerHTML = "Read More <i class='ri-arrow-right-s-fill readmoreicon'></i>";
                     clampText[index].scrollIntoView({
                         behavior:'smooth',
                     })
@@ -113,7 +113,7 @@ function updateBannerCorousel() {
                 else {
                     clampText[index].style.display = "block";
                     clampText[index].style.webkitLineClamp = "unset";
-                    element.innerHTML = "Read Less ⯇";
+                    element.innerHTML = "Read Less <i class='ri-arrow-left-s-fill readmoreicon'></i>";
                 }
         })
     })
